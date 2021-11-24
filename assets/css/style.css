@@ -5,26 +5,26 @@
 }
 
 body {
-    color: #173368;
+    color: #4e4f52;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 header {
     padding: 20px 35px;
-    background-color: #4d4d4d;
+    background-color: #38e9e9;
 }
 
 header h1 {
     font-weight: bold;
-    font-size: 36px;
-    color: #48e0d9;
+    font-size: 50px;
     margin: 0;
     display: inline;
+    padding: 30px;
 }
 
 header a {
     text-decoration: none;
-    color: #48e0d9;
+    color: #4e4f52;
 }
 
 header nav ul {
@@ -47,14 +47,14 @@ header nav ul li a {
 }
 
 footer {
-    background: #4d4d4d;
+    background-color: #38e9e9;
     width: 100%;
     padding: 15px 15px;
 }
 
 footer h3 {
     display: inline;
-    color: #48e0d9;
+    color: #4e4f52;
     font-size: 20px;
     margin: 0;
     font-weight: lighter;
@@ -65,7 +65,7 @@ section {
 }
 
 .hero {
-    background-image: url(../images/hero-bg.jpeg);
+    background-image: url(../images/pexels-miguel-á-padriñán-255379.jpg);
     height: 200px;
     background-size: cover;
     background-position: center;
@@ -73,9 +73,25 @@ section {
 }
 
 .hero h2 {
-    color: #48e0d9;
+    color: #4e4f52;
     position: absolute;
     bottom: 40px;
     right: 100px;
     font-size: 30px;
+    padding: 10px;
+    background-color: #38e9e9;
+}
+
+.content h2 {
+    font-size: 50px;
+}
+
+.fun {
+    font-weight: bold;
+}
+
+.content img {
+    width: 15%;
+    float: left;
+    padding: auto;
 }
