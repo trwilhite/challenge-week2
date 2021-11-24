@@ -1,3 +1,8 @@
+:root {
+    --text-color: #4e4f52;
+    --background-color: #38e9e9;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,18 +10,18 @@
 }
 
 body {
-    color: #4e4f52;
+    color: var(--text-color);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 header {
     padding: 20px 35px;
-    background-color: #38e9e9;
+    background-color: var(--background-color);
 }
 
 header h1 {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 40px;
     margin: 0;
     display: inline;
     padding: 30px;
@@ -24,7 +29,7 @@ header h1 {
 
 header a {
     text-decoration: none;
-    color: #4e4f52;
+    color: var(--text-color);
 }
 
 header nav ul {
@@ -47,14 +52,14 @@ header nav ul li a {
 }
 
 footer {
-    background-color: #38e9e9;
+    background-color: var(--background-color);
     width: 100%;
     padding: 15px 15px;
 }
 
 footer h3 {
     display: inline;
-    color: #4e4f52;
+    color: var(--text-color);
     font-size: 20px;
     margin: 0;
     font-weight: lighter;
@@ -73,17 +78,17 @@ section {
 }
 
 .hero h2 {
-    color: #4e4f52;
+    color: var(--text-color);
     position: absolute;
     bottom: 40px;
     right: 100px;
     font-size: 30px;
     padding: 10px;
-    background-color: #38e9e9;
+    background-color: var(--background-color);
 }
 
 .content h2 {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .fun {
@@ -102,9 +107,29 @@ section nav ul li {
 
 section nav ul li a {
     list-style: none;
-    color: #4e4f52
+    color: var(--text-color)
 }
 
 section p a {
-    color:#4e4f52;
+    color:var(--text-color);
+}
+
+.surf-report {
+    background-image: url(../images/surf-report.jpg);
+}
+
+.led-wall {
+    background-image: url(../images/led-wall.jpg);
+}
+
+.calculator {
+    background-image: url(../images/calculator.jpg);
+}
+
+.pastel-puzzles {
+    background-image: url(../images/pastel-puzzle.jpg);
+}
+
+.run-buddy {
+    background-image: url(../images/hero-bg.jpeg);
 }
