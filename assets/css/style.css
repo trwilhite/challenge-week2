@@ -95,3 +95,16 @@ section {
     float: left;
     padding: auto;
 }
+
+section nav ul li {
+    display: inline;
+}
+
+section nav ul li a {
+    list-style: none;
+    color: #4e4f52
+}
+
+section p a {
+    color:#4e4f52;
+}
