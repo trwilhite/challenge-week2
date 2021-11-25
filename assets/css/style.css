@@ -15,8 +15,11 @@ body {
 }
 
 header {
-    padding: 20px 35px;
+    padding: 20px 0 20px 0;
     background-color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header h1 {
@@ -24,16 +27,23 @@ header h1 {
     font-size: 40px;
     margin: 0;
     display: inline;
-    padding: 30px;
+}
+
+header h1 a {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 0 15px 0 75px;
 }
 
 header a {
     text-decoration: none;
-    color: var(--text-color);
 }
 
 header nav ul {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header nav {
@@ -49,6 +59,7 @@ header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 22px;
+    color: var(--text-color);
 }
 
 footer {
@@ -78,13 +89,13 @@ section {
 }
 
 .hero h2 {
-    color: var(--text-color);
+    color: var(--background-color);
     position: absolute;
     bottom: 40px;
     right: 100px;
     font-size: 30px;
     padding: 10px;
-    background-color: var(--background-color);
+    background-color: var(--text-color);
 }
 
 .content h2 {
@@ -116,20 +127,29 @@ section p a {
 
 .surf-report {
     background-image: url(../images/surf-report.jpg);
+    opacity: 0.5;
 }
 
 .led-wall {
     background-image: url(../images/led-wall.jpg);
+    opacity: 0.5;
 }
 
 .calculator {
     background-image: url(../images/calculator.jpg);
+    opacity: 0.5;
 }
 
 .pastel-puzzles {
     background-image: url(../images/pastel-puzzle.jpg);
+    opacity: 0.5;
 }
 
 .run-buddy {
     background-image: url(../images/hero-bg.jpeg);
+    opacity: 0.5;
+}
+
+.work-title:hover {
+    opacity: 1;
 }
