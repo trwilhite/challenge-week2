@@ -14,6 +14,29 @@ body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
+/* general section formatting */
+section {
+    padding: 40px;
+}
+
+section h2 {
+    font-size: 40px;
+}
+
+section nav ul li {
+    display: inline;
+}
+
+section nav ul li a {
+    list-style: none;
+    color: var(--text-color)
+}
+
+section p a {
+    color:var(--text-color);
+}
+
+/* header formatting begins here */
 header {
     padding: 20px 0 20px 0;
     background-color: var(--background-color);
@@ -62,30 +85,16 @@ header nav ul li a {
     color: var(--text-color);
 }
 
-footer {
-    background-color: var(--background-color);
-    width: 100%;
-    padding: 15px 15px;
-}
-
-footer h3 {
-    display: inline;
-    color: var(--text-color);
-    font-size: 20px;
-    margin: 0;
-    font-weight: lighter;
-}
-
-section {
-    padding: 60px;
-}
-
+/* hero formatting starts here */
 .hero {
     background-image: url(../images/pexels-miguel-á-padriñán-255379.jpg);
     height: 200px;
     background-size: cover;
     background-position: center;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .hero h2 {
@@ -98,58 +107,70 @@ section {
     background-color: var(--text-color);
 }
 
-.content h2 {
-    font-size: 40px;
+/* about me formatting begins */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-title {
+    flex: .25;
+    padding-right: 20px;
+    border-right: 3px solid var(--text-color);
+}
+
+.about-img {
+    flex: 1;
+    padding-left: 20px;
+    border: 1px solid black;
+}
+
+.about-img img {
+    max-width: 50%;
+}
+
+.about-text {
+    flex: 2;
+    border: 1px solid black;
 }
 
 .fun {
     font-weight: bold;
 }
 
-.content img {
-    width: 15%;
-    float: left;
-    padding: auto;
-}
-
-section nav ul li {
-    display: inline;
-}
-
-section nav ul li a {
-    list-style: none;
-    color: var(--text-color)
-}
-
-section p a {
-    color:var(--text-color);
-}
-
-.surf-report {
-    background-image: url(../images/surf-report.jpg);
+/* my work formatting begins */
+.project img {
+    max-width: 50%;
     opacity: 0.5;
 }
 
-.led-wall {
-    background-image: url(../images/led-wall.jpg);
-    opacity: 0.5;
-}
-
-.calculator {
-    background-image: url(../images/calculator.jpg);
-    opacity: 0.5;
-}
-
-.pastel-puzzles {
-    background-image: url(../images/pastel-puzzle.jpg);
-    opacity: 0.5;
-}
-
-.run-buddy {
-    background-image: url(../images/hero-bg.jpeg);
-    opacity: 0.5;
-}
-
-.work-title:hover {
+.project:hover img {
     opacity: 1;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project h3, .project p {
+    background-color: var(--background-color);
+}
+
+/* footer formatting begins */
+footer {
+    background-color: var(--background-color);
+    width: 100%;
+    padding: 15px 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer h3 {
+    display: inline;
+    color: var(--text-color);
+    font-size: 20px;
+    margin: 0;
+    font-weight: lighter;
 }
