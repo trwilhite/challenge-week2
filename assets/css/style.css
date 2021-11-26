@@ -114,49 +114,75 @@ header nav ul li a {
     justify-content: space-between;
 }
 
-.about-title {
-    flex: .25;
-    padding-right: 20px;
-    border-right: 3px solid var(--text-color);
-}
-
 .about-img {
     flex: 1;
     padding-left: 20px;
-    border: 1px solid black;
 }
 
 .about-img img {
-    max-width: 50%;
+    max-width: 100%;
 }
 
 .about-text {
-    flex: 2;
-    border: 1px solid black;
-}
-
-.fun {
-    font-weight: bold;
+    flex: 5;
+    padding-left: 20px;
 }
 
 /* my work formatting begins */
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex: 5;
+    padding-left: 20px;
+}
+
+.text-block-one, .text-block-two, .text-block-three {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.project:first-child img {
+    max-width: 100%;
+    height: auto;
+}
+
 .project img {
-    max-width: 50%;
     opacity: 0.5;
+    max-width: 25%;
+    height: auto;
+    border: 2px solid var(--text-color);
 }
 
 .project:hover img {
     opacity: 1;
 }
 
-.project {
+/* contact me formatting begins */
+.contact-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.project h3, .project p {
-    background-color: var(--background-color);
+.contact-links {
+    justify-content: flex-start;
+    text-align: center;
 }
+
+/* resume formatting begins */
+.resume-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 
 /* footer formatting begins */
 footer {
@@ -173,4 +199,12 @@ footer h3 {
     font-size: 20px;
     margin: 0;
     font-weight: lighter;
+}
+
+.flex-title {
+    flex: 0.1;
+    padding-right: 20px;
+    border-right: 3px solid var(--text-color);
+    text-align: right;
+    padding-left: 50px;
 }
