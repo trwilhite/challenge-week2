@@ -20,12 +20,21 @@ section {
 }
 
 section h2 {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 section p a {
     color:var(--text-color);
 }
+
+.flex-title {
+    flex: 0 0 20%;
+    padding-right: 20px;
+    border-right: 3px solid var(--text-color);
+    text-align: right;
+    padding-left: 50px;
+}
+
 
 /* header formatting begins here */
 header {
@@ -92,7 +101,7 @@ header nav ul li a {
     color: var(--background-color);
     position: absolute;
     bottom: 40px;
-    right: 100px;
+    right: 50px;
     font-size: 30px;
     padding: 10px;
     background-color: var(--text-color);
@@ -103,6 +112,7 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex: 0 0 80%;
 }
 
 .about-img {
@@ -123,20 +133,31 @@ header nav ul li a {
 .work-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex: 0 0 80%;
 }
 
 .project-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex: 5;
     padding-left: 20px;
 }
 
-.text-block-one, .text-block-two, .text-block-three {
-    background-color: var(--background-color);
+.relative {
+    position: relative !important;
+}
+
+.absolute {
+    position: absolute !important;
     color: var(--text-color);
+    background-color: var(--background-color);
+    padding: 2px 8px 2px 30px;
+    bottom: 30px;
+    left: 2px;
+    font-size: 20px;
+    z-index: 999;
 }
 
 .project:first-child img {
@@ -149,9 +170,10 @@ header nav ul li a {
     max-width: 25%;
     height: auto;
     border: 2px solid var(--text-color);
+    flex: 0 0 50%
 }
 
-.project:hover img {
+.project img:hover {
     opacity: 1;
 }
 
@@ -161,6 +183,7 @@ header nav ul li a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    flex: 0 0 80%;
 }
 
 .contact-container nav ul li {
@@ -171,14 +194,6 @@ header nav ul li a {
     list-style: none;
     color: var(--text-color);
 }
-
-/* resume formatting begins */
-.resume-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 
 /* footer formatting begins */
 footer {
@@ -192,15 +207,8 @@ footer {
 footer h3 {
     display: inline;
     color: var(--text-color);
-    font-size: 20px;
+    font-size: 15px;
     margin: 0;
     font-weight: lighter;
 }
 
-.flex-title {
-    flex: 0.1;
-    padding-right: 20px;
-    border-right: 3px solid var(--text-color);
-    text-align: right;
-    padding-left: 50px;
-}
