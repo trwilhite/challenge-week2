@@ -87,7 +87,7 @@ header nav ul li a {
 
 /* hero formatting starts here */
 .hero {
-    background-image: url(../images/pexels-miguel-á-padriñán-255379.jpg);
+    background-image: url("../images/pexels-miguel-á-padriñán-255379.jpg");
     height: 200px;
     background-size: cover;
     background-position: center;
