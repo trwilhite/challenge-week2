@@ -27,6 +27,15 @@ section p a {
     color:var(--text-color);
 }
 
+.flex-title {
+    flex: 0 0 20%;
+    padding-right: 20px;
+    border-right: 3px solid var(--text-color);
+    text-align: right;
+    padding-left: 50px;
+}
+
+
 /* header formatting begins here */
 header {
     padding: 20px 0 20px 0;
@@ -92,7 +101,7 @@ header nav ul li a {
     color: var(--background-color);
     position: absolute;
     bottom: 40px;
-    right: 100px;
+    right: 50px;
     font-size: 30px;
     padding: 10px;
     background-color: var(--text-color);
@@ -136,11 +145,20 @@ header nav ul li a {
     padding-left: 20px;
 }
 
-.text-block-one, .text-block-two, .text-block-three {
-    background-color: var(--background-color);
-    color: var(--text-color);
+.relative {
+    position: relative !important;
 }
 
+.absolute {
+    position: absolute !important;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: 2px 8px 2px 30px;
+    bottom: 30px;
+    left: 2px;
+    font-size: 20px;
+    z-index: 999;
+}
 
 .project:first-child img {
     max-width: 100%;
@@ -155,7 +173,7 @@ header nav ul li a {
     flex: 0 0 50%
 }
 
-.project:hover img {
+.project img:hover {
     opacity: 1;
 }
 
@@ -167,7 +185,6 @@ header nav ul li a {
     align-items: center;
     flex: 0 0 80%;
 }
-
 
 .contact-container nav ul li {
     display: inline;
@@ -190,15 +207,8 @@ footer {
 footer h3 {
     display: inline;
     color: var(--text-color);
-    font-size: 20px;
+    font-size: 15px;
     margin: 0;
     font-weight: lighter;
 }
 
-.flex-title {
-    flex: 0 0 20%;
-    padding-right: 20px;
-    border-right: 3px solid var(--text-color);
-    text-align: right;
-    padding-left: 50px;
-}
